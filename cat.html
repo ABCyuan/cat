@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>cat</title>
+<script src="easeljs-0.8.2.min.js"></script>
+<script src="circle.js"></script>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    position: absolute;
+    left: 610px;
+    top: 540px;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background: #8867ff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+canvas{
+    position: absolute;
+    left: 400px;
+    border: 3px solid #562bff;
+    box-shadow: 2px 2px 1px #e5e5e5;
+}
+</style>
+</head>
+<body>
+<div>
+<h6>游戏规则：将蓝色小圆点围起来即可获胜，否则需要再接再励哟！</h6>
+<canvas width="525" height="600" id="gameView"></canvas>
+<input type="button" value="重新开始">
+</div>
+<script src="app.js"></script>
+</body>
+</html>
